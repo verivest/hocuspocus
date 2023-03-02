@@ -8,7 +8,7 @@ const API_URI = "https://api.devverivest.com";
 console.log("Server started!");
 
 const server = Server.configure({
-  port: env.process.PORT || 3003,
+  port: process.env.PORT || 3003,
   extensions: [new Logger()],
 
   async onConfigure(data) {
