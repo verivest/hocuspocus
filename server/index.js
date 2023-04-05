@@ -3,7 +3,7 @@ import {Logger} from "@hocuspocus/extension-logger";
 import * as Y from "yjs";
 import axios from "axios";
 
-const API_URI = "https://api.uat-crusaders.stageverivest.com";
+const API_URI = process.env.API_URI || "https://api.uat-crusaders.stageverivest.com";
 
 console.log("Server started!");
 
